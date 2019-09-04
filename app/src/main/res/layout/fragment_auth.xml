@@ -21,11 +21,13 @@
         <TextView  android:layout_width="350dp" android:fontFamily="@font/manjari_bold" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center"
                   android:text="@string/app_name"  android:textColor="@color/colorFont" android:textSize="30sp"/>
         <LinearLayout android:layout_marginTop="20pt" android:orientation="vertical" android:layout_gravity="center"
-                      android:padding="10pt" android:background="@color/colorBox"
+                      android:padding="10pt" android:background="@drawable/shape_box"
                       android:layout_width="350dp" android:layout_height="wrap_content">
+
+
             <TextView android:textColor="@color/colorFont" android:fontFamily="@font/font_main" android:layout_width="match_parent"
                       android:layout_height="wrap_content" android:text="Email:"/>
-            <EditText android:background="@color/colorInput" android:fontFamily="@font/font_main"
+            <EditText android:background="@drawable/shape_input" android:fontFamily="@font/font_main"
                       android:layout_marginTop="5dp" android:padding="10dp"
                       android:hint="my email..." android:textColorHint="@color/colorFont"
                       android:layout_width="match_parent"
@@ -36,15 +38,15 @@
             <TextView android:textColor="@color/colorFont" android:fontFamily="@font/font_main" android:layout_marginTop="5dp"
                       android:layout_width="match_parent"  android:layout_height="wrap_content"
                       android:text="Password:"/>
-            <EditText android:background="@color/colorInput" android:fontFamily="@font/font_main"
+            <EditText android:background="@drawable/shape_input" android:fontFamily="@font/font_main"
                       android:layout_marginTop="5dp" android:padding="10dp"
                       android:textColor="@color/colorFont" android:textColorHint="@color/colorFont"
                       android:hint="my password..."  android:layout_width="match_parent"
                       android:layout_height="wrap_content" style="@style/Widget.AppCompat.EditText"
                       android:id="@+id/inputPassword"/>
 
-            <Button android:layout_marginTop="20dp" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:background="@color/colorBtn"
+            <Button android:layout_marginTop="20dp"  android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:background="@drawable/shape_button"
                     android:textColor="@color/colorFont" android:text="Login" android:id="@+id/btnLogin"/>
         </LinearLayout>
     </LinearLayout>
