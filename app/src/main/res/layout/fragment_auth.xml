@@ -15,20 +15,37 @@
             android:id="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"
-                  android:text="@string/app_name" android:textColor="@color/colorFont" android:textSize="20sp"/>
-        <LinearLayout android:layout_marginTop="20pt" android:orientation="vertical" android:layout_gravity="center" android:padding="10pt" android:background="@color/colorBox"
-                      android:layout_width="150pt" android:layout_height="wrap_content">
-            <TextView android:textColor="@color/colorFont" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Email:"/>
-            <EditText android:background="@color/colorInput" android:layout_marginTop="5dp" android:padding="10dp" android:hint="my email..." android:textColorHint="@color/colorFont" android:layout_width="match_parent"
-                      android:layout_height="wrap_content" android:textColor="@color/colorFont" android:inputType="text"/>
+
+        <ImageView android:layout_width="128dp"  android:layout_height="128dp" android:layout_marginTop="30dp" android:layout_marginBottom="10dp" android:layout_gravity="center"  android:src="@drawable/photoLogo" />
+
+        <TextView  android:layout_width="350dp" android:fontFamily="@font/manjari_bold" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center"
+                  android:text="@string/app_name"  android:textColor="@color/colorFont" android:textSize="30sp"/>
+        <LinearLayout android:layout_marginTop="20pt" android:orientation="vertical" android:layout_gravity="center"
+                      android:padding="10pt" android:background="@color/colorBox"
+                      android:layout_width="350dp" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/colorFont" android:fontFamily="@font/font_main" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:text="Email:"/>
+            <EditText android:background="@color/colorInput" android:fontFamily="@font/font_main"
+                      android:layout_marginTop="5dp" android:padding="10dp"
+                      android:hint="my email..." android:textColorHint="@color/colorFont"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:textColor="@color/colorFont"
+                      android:inputType="text" android:id="@+id/inputEmal"/>
 
 
+            <TextView android:textColor="@color/colorFont" android:fontFamily="@font/font_main" android:layout_marginTop="5dp"
+                      android:layout_width="match_parent"  android:layout_height="wrap_content"
+                      android:text="Password:"/>
+            <EditText android:background="@color/colorInput" android:fontFamily="@font/font_main"
+                      android:layout_marginTop="5dp" android:padding="10dp"
+                      android:textColor="@color/colorFont" android:textColorHint="@color/colorFont"
+                      android:hint="my password..."  android:layout_width="match_parent"
+                      android:layout_height="wrap_content" style="@style/Widget.AppCompat.EditText"
+                      android:id="@+id/inputPassword"/>
 
-            <TextView android:textColor="@color/colorFont" android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Password:"/>
-            <EditText android:background="@color/colorInput" android:layout_marginTop="5dp" android:padding="10dp"  android:textColor="@color/colorFont" android:textColorHint="@color/colorFont" android:hint="my password..." android:layout_width="match_parent" android:layout_height="wrap_content" />
-
-            <Button android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorBtn" android:textColor="@color/colorFont" android:text="Login" />
+            <Button android:layout_marginTop="20dp" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:background="@color/colorBtn"
+                    android:textColor="@color/colorFont" android:text="Login" android:id="@+id/btnLogin"/>
         </LinearLayout>
     </LinearLayout>
 
