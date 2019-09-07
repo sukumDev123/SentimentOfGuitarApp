@@ -4,27 +4,44 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   android:background="@color/colorBackground"
-                                                   tools:context=".ChartFragment">
-
-    <TextView android:id="@+id/textViewChart" android:layout_width="match_parent"
-              android:gravity="left"
-
-              android:layout_marginLeft="20dp"
-              android:layout_marginTop="20dp"
-              android:layout_marginRight="20dp"
-              app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
-              android:textColor="@color/colorFont" android:text="Char sentiment"/>
-    <LinearLayout android:layout_marginTop="10dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
-                  android:background="@drawable/shape_box" android:id="@+id/frameChart1"
-                  app:layout_constraintTop_toBottomOf="@id/textViewChart"
-                  app:layout_constraintStart_toStartOf="@+id/textViewChart"
-                  app:layout_constraintEnd_toEndOf="@+id/textViewChart" android:orientation="vertical"
-                  android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                                   android:background="@color/colorBox"
+                                                   tools:context=".sentiments.chart.ChartFragment">
 
 
+    <ScrollView android:layout_width="0dp" android:layout_height="0dp" android:id="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      app:layout_constraintStart_toStartOf="parent" android:id="@+id/chartText1" android:text="test1"
+                      android:textColor="@color/goodComment"
+                      android:textSize="15sp" />
 
-    </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="10dp" android:id="@+id/barChart1" android:background="@color/goodComment" android:layout_height="10dp"/>
 
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:id="@+id/chartText2" android:text="test2"
+                      android:textColor="@color/neuComment"
+                      android:textSize="15sp"/>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="10dp" android:id="@+id/barChart2" android:background="@color/neuComment" android:layout_height="10dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="test3"
+                      android:id="@+id/chartText3"
+                      android:textColor="@color/negComment"
+                      android:layout_margin="10dp"
+                      android:textSize="15sp" />
+
+            <LinearLayout android:orientation="vertical" android:layout_width="10dp" android:id="@+id/barChart3" android:background="@color/negComment" android:layout_height="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:id="@+id/totalCommentSize"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="2dp" android:textSize="20sp" android:text="total comment"
+                      android:textColor="@color/colorFont"/>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

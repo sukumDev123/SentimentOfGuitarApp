@@ -1,12 +1,11 @@
-package com.example.sentimentofguitarapp
+package com.example.sentimentofguitarapp.auth
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.sentimentofguitarapp.R
 import kotlinx.android.synthetic.main.fragment_auth.*
 
 
@@ -42,8 +41,8 @@ class AuthFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnLogin.setOnClickListener {
-            val email : String = inputEmal.text.toString()
-            val password: String = inputEmal.text.toString()
+//            val email : String = inputEmal.text.toString()
+//            val password: String = inputPassword.text.toString()
 
         }
     }
