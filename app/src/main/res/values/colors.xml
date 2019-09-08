@@ -5,4 +5,8 @@
     <color name="colorBtn" >#ED5454</color>
     <color name="colorFont">#fff</color>
     <color name="colorInput">#31315A</color>
+
+    <color name="goodComment">#8BC34A</color>
+    <color name="negComment">#F44336</color>
+    <color name="neuComment">#FFEB3B</color>
 </resources>
