@@ -19,6 +19,8 @@
         <activity android:name=".MainActivity">
 
         </activity>
+
+        <activity android:name=".listdetail.ListDetailActivity"></activity>
     </application>
 
 </manifest>

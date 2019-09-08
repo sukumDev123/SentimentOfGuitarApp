@@ -59,7 +59,7 @@ class ChartFragment : Fragment() {
     }
     private fun setGoodCommentAndBar(sentimentNumber: SentimentsModel) {
         val chartSentimentsClass =
-            ChartSentimentsCal(mutableListOf(sentimentNumber.good, sentimentNumber.neg, sentimentNumber.neutral))
+            ChartSentimentsCal(mutableListOf(sentimentNumber.good, sentimentNumber.neutral , sentimentNumber.neg))
         val chartSentimentsCal = chartSentimentsClass.persentEachData()
         setTextToShowOnTextView(chartSentimentsCal, chartSentimentsClass.totalSizeComment())
         setChartBar(chartSentimentsClass)
