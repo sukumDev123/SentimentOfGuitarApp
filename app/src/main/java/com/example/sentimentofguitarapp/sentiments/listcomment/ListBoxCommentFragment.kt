@@ -49,7 +49,7 @@ class ListBoxCommentFragment : Fragment() {
             sentiment ->
             btnGood.text = "good comment \nsize : ${sentiment.good}"
             btnNeg.text = "neg comment \nsize : ${sentiment.neg}"
-            btnNeu.text = "neutral comment \nsize : ${sentiment.neutral}"
+            btnNeu.text = "recommend comment \nsize : ${sentiment.neutral}"
         })
     }
 
