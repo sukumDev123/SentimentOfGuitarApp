@@ -30,20 +30,24 @@ class ListDetailActivity : AppCompatActivity() {
         })
     }
 
-    private fun setAdpter(value: String, d: ListDetailModel) {
+    private fun setAdpter(value: String, d: List<CommentSentiment> ) {
+
         if (value == "1") {
+            val goodComment: List<CommentSentiment> = d.filter { d -> d.predictVal == "1" }
             listTextView1.text = "Good comment"
-            adpter.setAdpterList(d.goodComment)
+            adpter.setAdpterList(goodComment)
         }
         if (value == "0") {
+            val neutralComment: List<CommentSentiment> = d.filter { d -> d.predictVal == "0" }
             listTextView1.text = "Fix comment"
 
-            adpter.setAdpterList(d.neutralComment)
+            adpter.setAdpterList(neutralComment)
         }
         if (value == "-1") {
+            val negComment: List<CommentSentiment> = d.filter { d -> d.predictVal == "-1" }
             listTextView1.text = "Neg comment"
 
-            adpter.setAdpterList(d.negComment)
+            adpter.setAdpterList(negComment)
         }
         adpter.notifyDataSetChanged()
     }

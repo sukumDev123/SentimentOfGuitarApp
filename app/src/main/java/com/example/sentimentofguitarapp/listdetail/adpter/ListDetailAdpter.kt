@@ -15,8 +15,9 @@ class ListDetailAdpter:  RecyclerView.Adapter<ListDetailHolder>() {
     override fun onBindViewHolder(holder: ListDetailHolder, position: Int) {
         val comment =  this.listComment?.get(position)
         comment?.let {
-            holder.setUserName(comment.userName)
             holder.setCommentText(comment.text)
+            holder.typeOfSentiement(comment.predictVal)
+            holder.freqSet(comment.freq)
         }
     }
 

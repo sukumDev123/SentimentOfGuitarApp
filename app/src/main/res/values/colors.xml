@@ -4,6 +4,7 @@
     <color name="colorBackground">#161636</color>
     <color name="colorBtn" >#ED5454</color>
     <color name="colorFont">#fff</color>
+    <color name="colorFont_g">#EBFFFFFF</color>
     <color name="colorInput">#31315A</color>
 
     <color name="goodComment">#8BC34A</color>

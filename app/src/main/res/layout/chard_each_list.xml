@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                                    android:layout_margin="10dp"
-
                                    android:orientation="vertical"
+                                   style="@style/Base.CardView"
                                    android:layout_width="match_parent" android:padding="20dp"
                                    android:layout_height="wrap_content" android:layout_marginBottom="10dp">
 
-
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
-                  android:padding="20dp" android:background="@drawable/shape_box"
+                  android:padding="20dp" android:background="@color/colorBox"
                   android:layout_height="wrap_content">
-        <TextView android:textColor="@color/colorFont" android:layout_width="match_parent"
-                  android:layout_height="wrap_content" android:id="@+id/userCardText" android:textSize="20dp"
-                  android:text="comment from user"/>
-        <TextView android:textColor="@color/colorFont" android:layout_width="match_parent"
-                  android:id="@+id/commentCardText" android:layout_height="wrap_content" android:textSize="18dp"
-                  android:layout_marginLeft="10dp" android:text="comment from user"/>
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/typeOfComment" android:textColor="@color/colorFont" android:textSize="18dp" android:text="type comment"   />
+
+        <TextView android:textColor="@color/colorFont_g"   android:layout_width="wrap_content"
+                  android:id="@+id/commentCardText"  android:layout_marginTop="20dp" android:layout_height="wrap_content"
+                   android:text="comment from user"/>
+
+        <TextView android:textColor="@color/colorFont_g" android:layout_width="wrap_content"
+                  android:id="@+id/textFreq" android:layout_marginTop="10dp" android:layout_height="wrap_content"
+                  android:textSize="8sp"
+                  android:text="Count of Problem Requires"/>
+
+
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
